@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="container">
+
+    <header>
+      <img src="images/logo.svg" alt="">
+
+      <div class="score-container">
+        <h4> Score</h4>
+        <p id="score">0</p>
+      </div>
+      </header>
+
+      <main>
+
+        <div class="btn-circle paper choice" data-choice="paper">
+          <div class="wrapper"><img src="images/icon-paper.svg" alt="paper-buttom"></div>  
+        </div>
+
+        <div class="btn-circle scissors choice" data-choice="scissors">
+          <div class="wrapper"><img src="images/icon-scissors.svg" alt="scissor-button"></div>
+        </div>
+
+        <div class="btn-circle rock choice" data-choice="rock">
+          <div class="wrapper"><img src="images/icon-rock.svg" alt="rock-button"></div>
+        </div>
+
+      </main>
+
+      <div  class="selection">
+
+        <div class="user-selection">
+          <h2>YOU PICKED</h2>
+          <div class="btn-circle paper" data-choice="paper">
+            <div class="wrapper"><img src="images/icon-paper.svg" alt="selection-paper"></div>  
+          </div>
+        </div>
+    
+        <div class="down"> 
+          <h1 class="result"></h1>
+          <button class="btn" id="reset">PLAY AGAIN</button>
+        </div>
+    
+        <div class="house-selection"> 
+          <h2>HOUSE PICKED</h2>
+          <div class="btn-circle scissors" data-choice="scissors">
+            <div class="wrapper"><img src="images/icon-scissors.svg"  alt="selection-scissors"></div>
+          </div>
+        </div>
+    
+        
+      </div>
+    
+
+  </div>
+
+  <div class="rules-box">
+    <div class="top">
+      <h1>RULES</h1>
+      <img src="images/icon-close.svg" alt="close-button" id="close">
+    </div>
+    <img src="images/image-rules.svg" alt="rules">
+  </div>
+
+  <button class="btn-rules">Rules</button>
+
+</body>
+</html>
